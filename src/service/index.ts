@@ -6,9 +6,16 @@ import { renderIndexLayout } from "../layout/index_layout"
 const app = document.getElementById('app') as HTMLDivElement;
 app.innerHTML = renderIndexLayout();
 
+//按钮：顶部-Logo
+(document.getElementById('home-logo') as HTMLDivElement).addEventListener('click', () => {
+    const page_path = import.meta.env.BASE_URL + 'index.html';
+    window.location.href = page_path;
+});
+
 //按钮：顶部-联系我
 (document.getElementById('contact-button') as HTMLDivElement).addEventListener('click', () => {
-    alert('还在开发中请稍等！');
+    const page_path = import.meta.env.BASE_URL + 'src/page/contact.html';
+    window.location.href = page_path;
 });
 //按钮：blog-记录/分享
 (document.getElementById('blog-button') as HTMLDivElement).addEventListener('click', () => {

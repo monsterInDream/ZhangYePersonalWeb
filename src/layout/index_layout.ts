@@ -16,7 +16,7 @@ export function renderIndexLayout() {
 
        <!-- 顶部视图 -->
        <div class="flex flex-row items-center w-full h-27 sm:h-29 md:h-32 lg:h-35 bg-transparent top-0 left-0">
-           <img src="${logoImage}" alt="logo" class="w-8.5 sm:w-9 md:w-9.5 lg:w-10 h-6.5 sm:h-7 md:h-7.5 lg:h-8 ml-7 sm:ml-11 md:ml-13 lg:ml-15">
+           <img src="${logoImage}" id="home-logo" alt="logo" class="w-8.5 sm:w-9 md:w-9.5 lg:w-10 h-6.5 sm:h-7 md:h-7.5 lg:h-8 ml-7 sm:ml-11 md:ml-13 lg:ml-15">
            <span class="ml-2 sm:ml-5 md:ml-6 lg:ml-7 text-[18px] sm:text-[28px] md:text-[30px] lg:text-[32px]  font-normal text-center text-[#750FF7]">Coder.Zhang</span>
            <div id="contact-button" class="group flex items-center justify-center w-26 sm:w-32 md:w-36 lg:w-40 h-10 sm:h-11 md:h-12 lg:h-14 ml-auto mr-8 sm:mr-15 bg-transparent border-2 border-[#750FF7] border-solid rounded-[15px] hover:bg-[#750FF7]"> 
              <span class="text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] font-normal text-center text-[#750FF7] group-hover:text-[#FFFFFF]">联系我</span>
