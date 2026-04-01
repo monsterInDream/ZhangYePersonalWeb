@@ -4,5 +4,13 @@ export default ({mode}:ConfigEnv) => defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base: mode === 'production' ? '/ZhangYePersonalWeb/' : '/'
+  base: mode === 'production' ? '/ZhangYePersonalWeb/' : '/',
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        contact: 'src/page/contact.html',
+      }
+    }
+  }
 })
